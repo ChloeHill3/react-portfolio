@@ -1,0 +1,19 @@
+footer {
+   background-color: rgba(255, 255, 255, 0.287);
+   padding: 3rem 0;
+   text-align: center;  
+   margin-top: 1rem;
+   backdrop-filter:blur(5px);
+}
+
+.footer-socials {
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   scale: 240%;
+}
+
+
+a {
+   margin-left: 0.2rem;
+   margin-right: 0.2rem;
+}
