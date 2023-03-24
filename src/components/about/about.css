@@ -1,0 +1,43 @@
+:root {
+   --color-bg: #162926;
+   --color-bg-variant: #C5CCB9;
+   --color-bg-v-opaque: #c5ccb9;
+
+   --color-primary: #e29482;
+   --color-white: #fff;
+   --color-dark: #514C48;
+   --color-white-socials: #fbfbfbbc;
+
+
+   --transition-ease: all 450ms ease;
+
+}
+
+#about {
+   margin-bottom: 2rem;
+}
+.about-container {
+   display: grid;
+   grid-template-columns: 30% 60%;
+   gap: 12%;
+}
+
+.about-me {
+   width: 100%;
+   aspect-ratio: 1/1;
+   border-radius: 3rem;
+   display: grid;
+   place-items: center;
+}
+
+.about-me-image {
+   object-position: bottom;
+   background: 
+   linear-gradient(var(--color-bg-v-opaque), transparent);
+   width: 15rem;
+   height: 20rem;
+   position: absolute;
+   border-radius: 2rem 4rem 4rem 4rem;
+   overflow: hidden;
+   backdrop-filter:blur(1px);
+}

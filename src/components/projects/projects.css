@@ -1,0 +1,66 @@
+:root {
+   --color-bg: #1629266d;
+   --color-bg-variantnav: #b2b9a6c0;
+   --color-primarynav: #e2948260;
+   --color-white: #fff;
+   --color-dark: #514C48;
+   --color-light:  #F5E5DA
+   --transition-ease: all 450ms ease;
+}
+
+.project {
+   height: 100vh;
+}
+.project-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2rem;
+}
+
+.project-item {
+   background: var(--color-bg);
+   border-radius: 1rem;
+   border: 2px solid transparent;
+   transition:  var(--transition-ease);
+}
+
+.project-item:hover {
+   border-color: var(--color-bg-variantnav);
+   background: transparent;
+}
+
+.project-image {
+   border-radius: 1rem;
+   overflow: hidden;
+}
+
+
+
+.project-cta{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 0.5rem;
+   margin: 1rem 0 0;
+
+   
+}
+
+
+/* ---------- MEDIA QUERIES (SMALL DEVICES) --------- */
+@media screen and (max-width: 1000px) {
+   .project-container {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+   }
+}
+
+
+/* ---------- MEDIA QUERIES (MEDIUM DEVICES) --------- */
+@media screen and (max-width: 1600px) {
+   .project-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+   }
+}

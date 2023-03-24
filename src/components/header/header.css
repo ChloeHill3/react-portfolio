@@ -1,0 +1,120 @@
+:root {
+   --color-bg: #162926;
+   --color-bg-variant: #C5CCB9;
+   --color-bg-v-opaque: #c5ccb94d;
+
+   --color-primary: #e29482;
+   --color-white: #fff;
+   --color-dark: #514C48;
+   --color-white-socials: #fbfbfbbc;
+
+
+   --transition-ease: all 450ms ease;
+
+
+   --container-width-lg: 75%;
+   --container-width-md: 86%;
+   --container-width-sm: 90%;
+
+
+}
+header {
+   height: 100vh;
+   padding-top: 5rem;
+   overflow: hidden;
+   padding-bottom: 0;
+}
+
+.header-container {
+   text-align: center; 
+   position: relative;
+   height: 100%;
+}
+/* -----------CTA -------------*/
+.cta {
+   margin-top: 1.5rem;
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+}
+/* -----------SOCIALS -------------*/
+
+.header-socials {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.5rem;
+   position: absolute;
+   left: 1rem;
+   top: 4rem;
+   scale: 140%;
+}
+
+.socials {
+   backdrop-filter:blur(5px);
+   height: 1.5rem;
+   color: #71977e;
+}
+/* -----------IMAGES -------------*/
+
+.me {
+   background: 
+   linear-gradient(var(--color-primary), transparent);
+   width: 15rem;
+   height: 20rem;
+   position: absolute;
+   left: calc(50% - 8rem);
+margin-top: 3rem;
+border-radius: 10rem 10rem 0 0;
+overflow: hidden;
+}
+
+.me:hover {
+   scale: 102%;
+   transition: var(--transition-ease);
+}
+
+.scroll-down {
+   position: absolute;
+   right: -2rem;
+   bottom: 8rem;
+   transform: rotate(90deg);
+   font-weight: 600;
+}
+
+/* ------ MEDIA QUERIES SMALL --------- */
+@media screen and (max-width: 600px) {
+   header {
+      height: 100vh;
+   
+   }
+   .header-socials {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      position: absolute;
+      left: calc(50% - 2.5rem);
+      top: 5rem;
+      scale: 100%;
+   }
+
+
+}
+
+/* ------ MEDIA QUERIES MEDIUM --------- */
+@media screen and (max-width: 800px) {
+   header {
+      height: 70vh;
+   }
+   .header-socials {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      position: absolute;
+      left: calc(50% - 1.5rem);
+      top: 5rem;
+      scale: 100%;
+   }
+}
