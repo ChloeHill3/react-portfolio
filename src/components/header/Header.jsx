@@ -1,12 +1,12 @@
-import React from 'react'
-import './header.css'
-import Cv from '../../assets/cv.pdf'
-import Me from '../../assets/images/photo.png'
-import {RxLinkedinLogo} from 'react-icons/rx'
-import {FaGithubSquare} from 'react-icons/fa'
-import {FaTwitterSquare} from 'react-icons/fa'
+import React from 'react';
+import './header.css';
+import Cv from '../../assets/cv.pdf';
+import Me from '../../assets/images/photo.png';
+import {RxLinkedinLogo} from 'react-icons/rx';
+import {FaGithubSquare} from 'react-icons/fa';
+import {FaTwitterSquare} from 'react-icons/fa';
 
-const Header = () => {
+const Header = () => { 
   return (
   <header id='home'>
     <div className="container header-container" >
